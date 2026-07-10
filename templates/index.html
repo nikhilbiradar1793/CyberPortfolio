@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil | Cyber Security Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Cyber<span>Portfolio</span>
+        </div>
+
+        <ul class="nav-links" id="menu">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#certifications">Certificates</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <div class="menu-btn" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Nikhil Biradar</h1>
+
+<h2>Cyber Security Engineer</h2>
+
+<p>
+
+Passionate about Ethical Hacking,
+Penetration Testing,
+Network Security,
+Python Development,
+and Vulnerability Assessment.
+
+</p>
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="/download-resume" class="btn2">
+Download Resume
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile">
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about-box">
+
+<p>
+
+I am currently pursuing my Master's in Computer Science.
+
+I have strong knowledge of
+
+Python,
+
+Linux,
+
+Networking,
+
+Ethical Hacking,
+
+VAPT,
+
+Burp Suite,
+
+Wireshark,
+
+Nmap,
+
+and Metasploit.
+
+I enjoy solving security challenges and building cybersecurity tools.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<h2 class="title">
+Technical Skills
+</h2>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+Python
+</div>
+
+<div class="skill-card">
+Networking
+</div>
+
+<div class="skill-card">
+Linux
+</div>
+
+<div class="skill-card">
+Ethical Hacking
+</div>
+
+<div class="skill-card">
+Nmap
+</div>
+
+<div class="skill-card">
+Wireshark
+</div>
+
+<div class="skill-card">
+Burp Suite
+</div>
+
+<div class="skill-card">
+Metasploit
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<h2 class="title">
+Projects
+</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<h3>Automated Network Scanner</h3>
+
+<p>
+
+Python based scanner using Nmap.
+
+Generates reports and scans live hosts.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Web Application VAPT</h3>
+
+<p>
+
+Performed vulnerability assessment using
+
+Burp Suite,
+
+OWASP ZAP,
+
+Nikto,
+
+SQLMap.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Python Honeypot IDS</h3>
+
+<p>
+
+Developed a Honeypot for intrusion detection and log monitoring.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+
+<section id="certifications">
+
+<h2 class="title">
+Certificates
+</h2>
+
+<div class="certificate-grid">
+
+<div class="certificate">
+    <a href="{{ url_for('static', filename='images/cert1.jpg') }}" target="_blank">
+        <img src="{{ url_for('static', filename='images/cert1.jpg') }}" alt="Certificate">
+    </a>
+</div>
+
+<div class="certificate">
+
+<img src="{{ url_for('static', filename='images/cert2.jpg') }}" alt="Certificate">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact-box">
+
+        <h3>Let's Connect</h3>
+
+        <p>
+            I'm available for Cyber Security, Ethical Hacking,
+            VAPT, Python Development, and Networking opportunities.
+            Feel free to contact me.
+        </p>
+
+        <!-- Phone -->
+        <a href="tel:+919322509412" class="contact-btn">
+            <i class="fa-solid fa-phone"></i>
+            +91 93225 09412
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:nikhilbiradar1793@gmail.com" class="contact-btn">
+            <i class="fa-solid fa-envelope"></i>
+            nikhilbiradar1793@gmail.com
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/nikhil-balaji-biradar-"
+           target="_blank"
+           class="contact-btn">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn Profile
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/nikhilbiradar1793"
+           target="_blank"
+           class="contact-btn">
+            <i class="fab fa-github"></i>
+            GitHub Profile
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 Nikhil | Cyber Security Portfolio
+
+</p>
+<div class="social-icons">
+
+    <!-- Phone -->
+    <a href="tel:+919322509412" title="Call Me">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:nikhilbiradar1793@gmail.com" title="Email Me">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/nikhil-balaji-biradar-"
+       target="_blank"
+       title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/nikhilbiradar1793"
+       target="_blank"
+       title="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/nikss.b.b?igsh=c2dqODU1cTh6bWs5"
+       target="_blank"
+       title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+</div>
+
+</footer>
+
+<!-- JS -->
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
